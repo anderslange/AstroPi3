@@ -302,6 +302,12 @@ sudo apt-get -y install indi-full
 sudo apt-get -y install indi-full kstars-bleeding
 sudo apt-get -y install kstars-bleeding-dbg indi-dbg
 
+# Installs the GPS-Daemon (GPSD) and GPSD Clients 
+# This is necesarry if you have a local GPS dongle attached to your SBC, 
+# and want to use it to set the coordinates and systemm time.
+# (If you don't need this, you can comment this line out with a #)
+sudo apt-get -y install gpsd gpsd-clients
+
 # Installs the General Star Catalog if you plan on using the simulators to test (If not, you can comment this line out with a #)
 display "Installing GSC"
 sudo apt-get -y install gsc
